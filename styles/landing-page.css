@@ -1,0 +1,198 @@
+/* 
+   Apply border-box sizing globally 
+   so padding and borders are included 
+   inside the element’s set width/height.
+   Makes layout sizing more predictable.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+main, header, footer, section, article, aside, nav, figure {
+  display: block;
+}
+
+p, h1 {
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(50,24,117,0.6), rgba(0,0,0,0.6)),
+    url(/assets/bg.jpg) center/cover no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*HEADER*/
+header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; 
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
+}
+
+#site-logo {
+    height: 70px;
+    width: auto;
+    cursor: pointer;
+}
+
+/*MAIN*/
+main {
+    min-height: 100dvh;
+    padding-top: 90px;
+    flex: 1;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    gap: 20px;
+    padding-top: 100px;
+    padding: 20px;
+}
+
+.intro-text {
+  color: white;
+  flex: 1;
+  padding: clamp(20px, 2vw, 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+}
+
+.intro-text h1 {
+  font-size: clamp(32px, 6vw, 48px);
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.intro-text p {
+  font-size: clamp(16px, 2vw, 20px);
+  color: #fafafa;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: #fffdfd;
+}
+
+.features li {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sign-in-container {
+    color: white;
+    background: linear-gradient(135deg, #321875, #4b2da8);
+    border-radius: 10px;
+    padding: clamp(20px, 2vw, 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(40px, 5vw, 30px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: clamp(250px, 80vw, 450px);
+    height: clamp(450px, 80vh, 800px);
+}
+
+.sign-in-container button {
+    background-color: white;
+    color: #321875;
+    border: none;
+    padding: clamp(10px, 2vw, 15px) clamp(20px, 4vw, 30px);
+    border-radius: 10px;
+    font-size: clamp(14px, 1.5rem, 18px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.sign-in-container button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.sign-in-container p:last-child {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    margin-top: clamp(20px, 3vh, 30px);
+    cursor: pointer;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    color: rgba(255,255,255,0.8);
+    background: rgba(50,24,117,0.8);
+    font-size: 14px;
+}
+
+/*Small screens*/
+@media (max-width: 900px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .sign-in-container {
+        width: clamp(300px, 30vw, 500px);
+        height: auto;
+    }
+
+    .intro-illustration img {
+        max-width: 250px;
+    }
+
+    .features {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
