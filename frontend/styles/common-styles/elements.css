@@ -1,0 +1,24 @@
+button {
+    padding: clamp(7px, 2vw, 13px) clamp(20px, 4vw, 30px);
+    font-size: clamp(14px, 1.5rem, 18px);
+    border-radius: 10px;
+    font-weight: regular;
+    min-width: 120px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #4a2d96;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #5d3ac6;
+    transform: translateY(-1px) scale(1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: rgb(165, 162, 162);
+    font-weight: 400;
+}

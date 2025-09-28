@@ -1,0 +1,29 @@
+.student-homepage {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+
+.join-course-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.joined-courses-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    column-gap: 50px;
+    row-gap: 60px;
+}
+
+footer {
+    color: white !important;
+}
