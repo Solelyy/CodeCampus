@@ -6,7 +6,7 @@ main, header, footer, section, article, aside, nav, figure {
   display: block;
 }
 
-p, h1 {
+p, h1, h2, h3, h4, h5, h6 {
     font-family: "Inter", sans-serif;
     color: white;
 }
@@ -88,7 +88,12 @@ footer {
     padding: 20px;
     bottom: 0;
     width: 100%;
-    color: rgba(255,255,255,0.8);
-    background: rgba(50,24,117,0.8);
+    color: white;
+    background: linear-gradient(135deg, 
+    #7554b6 0%, 
+    #6240ad 35%, 
+    #4a30a0 70%, 
+    #4a30a0 100%
+    );
     font-size: 14px;
 }
