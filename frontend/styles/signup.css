@@ -1,15 +1,15 @@
-*{
+* {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #eeeeee;
 }
 
-.web{
+.web {
     /*background-color: rgb(249, 46, 46);*/
     max-width: 1280px;
     margin: auto;
@@ -20,9 +20,9 @@ body{
     height: auto;
 }
 
-/* Login Box */
+/* Sign in Box */
 
-.login-box{
+.signin-box {
     width: 80%;
     height: 600px;
     margin: 50px 0 0 0;
@@ -31,7 +31,7 @@ body{
     justify-content: space-between;
 }
 
-.login-form-box{
+.signin-form-box {
     background-color: rgb(255, 255, 255);
     width: 55%;
     height: 100%;
@@ -43,7 +43,7 @@ body{
     justify-content: center;
 }
 
-.login-form-box img{
+.signin-form-box img {
     position: absolute;
     top: 20px;
     left: 30px;
@@ -52,19 +52,43 @@ body{
     margin-bottom: 20px;
 }
 
-.form-box{
-    width: 100%;
+/* * Form Header with Role Selector */
+.form-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.form-box h2{
+.form-box-header h2 {
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 30px;
     color: #512BB2;
 }
 
-/* Login form fields */
-.login-form-box .textbox input {
+.form-box-header select {
+    width: 100%;                 
+    max-width: 140px;            
+    padding: 10px 16px;
+    font-size: 15px;
+    color: #333;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color .2s, box-shadow .2s;
+}
+.form-box-header select:hover {
+    border-color: #512BB2; 
+}
+
+/* Sign In form fields */
+
+.form-box {
+    width: 100%;
+}
+
+.form-box .textbox input {
     width: 100%;
     padding: 14px 18px;
     margin-bottom: 18px;
@@ -74,12 +98,12 @@ body{
     outline: none;
     transition: border-color .2s;
 }
-.login-form-box .textbox input:focus {
-    border-color: #512BB2; /* purple accent */
+.form-box .textbox input:focus {
+    border-color: #512BB2; 
 }
 
 /* Purple CTA button */
-.login-form-box .btn {
+.form-box .btn {
     background: #512BB2;
     color: #fff;
     border: none;
@@ -90,13 +114,22 @@ body{
     cursor: pointer;
     transition: background .2s;
 }
-.login-form-box .btn:hover {
+.form-box .btn:hover {
     background: #5a37a8;
 }
 
-/* Login Image Box */
+.form-box a, 
+.form-box p {
+    margin-top: 20px;
+    text-align: center;
+    color: #512BB2;
+    text-decoration: none;
+}
 
-.login-img-box{
+
+/* Sign In Image Box */
+
+.signin-img-box{
     width: 45%;
     height: 100%;
     background:
