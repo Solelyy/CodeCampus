@@ -17,11 +17,14 @@
 .joined-courses-container {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     width: 100%;
     column-gap: 50px;
     row-gap: 60px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;     
+    justify-items: center;
 }
 
 footer {
