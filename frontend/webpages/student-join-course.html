@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/frontend/assets/fav-icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/frontend/assets/fav-icon/favicon.svg" />
+    <link rel="shortcut icon" href="/frontend/assets/fav-icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/frontend/assets/fav-icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="CodeCampus" />
+    <link rel="manifest" href="/frontend/assets/fav-icon/site.webmanifest" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
+    <link rel="stylesheet" href="/frontend/styles/common-styles/course-card.css">
+    <link rel="stylesheet" href="/frontend\styles\student-join-course.css">
+    <link rel="stylesheet" href="/frontend/styles/common-styles/elements.css">
+
+    <title>CodeCampus — Student</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <a href="/index.html"><img src="/frontend/assets/images/site-logo.png" alt="logo" id="site-logo"></a>
+            </div>
+
+            <div class="right">
+                <ul class="nav-links" id="nav-links"> 
+                    <li><a href=""><img src="/frontend/assets/icons/icon-notification.png" alt="notification-icon"></a></li>
+                    <li><a href=""><img src="/frontend/assets/icons/icon-profile.png" alt="menu-icon"></a></li>
+                    <li><a href= ""><img src="/frontend/assets/icons/icon-menu.png" alt="menu-icon"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="student-homepage">
+            <div class="join-course-btn-container">
+                <button id="join-course-btn">Join Private Course</button>
+            </div>
+            
+            <div class="courses-header">
+    <h2>Public Courses</h2>
+    <div class="search-container">
+        <input type="text" id="search-courses" placeholder="Search...">
+    </div>
+</div>
+
+            <div class="joined-courses-container">
+                <div class="course-card">
+                    <div class="course-image-container">
+                        <img src="/frontend/assets/images/java.png" alt="course-image">
+                    </div>
+                    <div class="course-info-container">
+                        <div class="course-info">
+                            <div id="course-title-progress">
+                               <h3>Intro to Java</h3>
+                                <p>Progress: 90%</p>
+                            </div>
+                            <p>By codemaster</p>
+                        </div>
+                        <button>Continue</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-container">
+                        <img src="/frontend/assets/images/html.png" alt="course-image">
+                    </div>
+                    <div class="course-info-container">
+                        <div class="course-info">
+                            <div id="course-title-progress">
+                               <h3>Intro to HTML</h3>
+                                <p>Progress: 50%</p>
+                            </div>
+                            <p>By codemaster</p>
+                        </div>
+                        <button>Continue</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-container">
+                        <img src="/frontend/assets/images/js.png" alt="course-image">
+                    </div>
+                    <div class="course-info-container">
+                        <div class="course-info">
+                            <div id="course-title-progress">
+                               <h3>Intro to JS</h3>
+                                <p>Progress: 0%</p>
+                            </div>
+                            <p>By codemaster</p>
+                        </div>
+                        <button>Continue</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-container">
+                        <img src="/frontend/assets/images/java.png" alt="course-image">
+                    </div>
+                    <div class="course-info-container">
+                        <div class="course-info">
+                            <div id="course-title-progress">
+                               <h3>Intro to Java</h3>
+                                <p>Progress: 90%</p>
+                            </div>
+                            <p>By codemaster</p>
+                        </div>
+                        <button>Continue</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-container">
+                        <img src="/frontend/assets/images/java.png" alt="course-image">
+                    </div>
+                    <div class="course-info-container">
+                        <div class="course-info">
+                            <div id="course-title-progress">
+                               <h3>Intro to Java</h3>
+                                <p>Progress: 90%</p>
+                            </div>
+                            <p>By codemaster</p>
+                        </div>
+                        <button>Continue</button>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image-container">
+                        <img src="/frontend/assets/images/java.png" alt="course-image">
+                    </div>
+                    <div class="course-info-container">
+                        <div class="course-info">
+                            <div id="course-title-progress">
+                               <h3>Intro to Java</h3>
+                                <p>Progress: 90%</p>
+                            </div>
+                            <p>By codemaster</p>
+                        </div>
+                        <button>Continue</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="/frontend/scripts/student-join-course.js"></script>
+
+</body>
+</html>
