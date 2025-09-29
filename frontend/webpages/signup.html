@@ -8,18 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/signup.css">
 
-    <title>Login</title>
+    <title>Sign Up</title>
 </head>
 <body>
     <div class="web">
-        <div class="login-box">
+        <div class="signin-box">
 
-            <div class="login-form-box">
+            <div class="signin-form-box">
                 <img src="../assets/images/site-logo.png" alt="">
-                <div class="form-box">
+                <div class="form-box-header">
                     <h2>Create an account</h2>
+                    <select name="role" id="">
+                        <option value="student">Student</option>
+                        <option value="instructor">Professor</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    
                     <div class="textbox">
                         <input type="text" placeholder="Username / Email" name="username" value="">
                     </div>
@@ -33,10 +40,11 @@
                     </div>
 
                     <input class="btn" type="button" value="Create account">
+                    <a href="../../index.html"><p>Already have an account?</p></a>
                 </div>
             </div>
 
-            <div class="login-img-box">
+            <div class="signin-img-box">
                 <!-- <img src="../assets/images/bg.jpg" alt=""> --> <!-- I Removed image tag, as background is now set in CSS not here -->
             </div>
 
