@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
+  <link rel="stylesheet" href="/frontend/styles/profile.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="left">
+        <a href="/index.html">
+          <img src="/frontend/assets/images/site-logo.png" alt="logo" id="site-logo">
+        </a>
+      </div>
+      <div class="right">
+        <ul class="nav-links" id="nav-links"> 
+          <li><a href=""><img src="/frontend/assets/icons/icon-notification.png" alt="notification-icon"></a></li>
+          <li><a href=""><img src="/frontend/assets/icons/icon-profile.png" alt="profile-icon"></a></li>
+          <li><a href=""><img src="/frontend/assets/icons/icon-menu.png" alt="menu-icon"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Profile Content -->
+  <main class="profile-page">
+    <!-- Left: Profile Info -->
+    <section class="profile-left">
+      <div class="profile-image">
+        <img src="/frontend/assets/images/pusa.jpg" alt="Profile Image">
+      </div>
+      <h2>Taylor Swift</h2>
+      <p class="username">@TSCoder</p>
+      <p>🎓 Student | Joined: Sept 01, 2025</p>
+      <p class="bio">
+        Hi, I am 2nd year BSIT student from QCU. I’d like to code in my free time.
+      </p>
+      <button class="btn" onclick="location.href='edit-profile.html'">Edit Profile</button>
+    </section>
+
+    <!-- Right: Achievements, Courses, Activities -->
+    <section class="profile-right">
+      <div class="card achievements">
+        <h3>🏆 Achievements</h3>
+        <ul>
+          <li>⭐ First Submission</li>
+          <li>💪 Completed First Course</li>
+          <li>🥇 Rank 3 in Intro to Java Course</li>
+        </ul>
+      </div>
+
+      <div class="card courses">
+        <h3>📚 Courses Joined</h3>
+        <div class="course-list">
+          <div class="course-card">Intro to Java</div>
+          <div class="course-card">Intro to Python</div>
+        </div>
+      </div>
+
+      <div class="card activities">
+        <h3>📊 Activities</h3>
+        <p>Last Active: Sept 12, 2025</p>
+        <p>Courses Joined: 2</p>
+        <p>Activities Completed: 10</p>
+        <p>Languages Used: Java, Python</p>
+        <p>Total Points Earned: 90</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CodeCampus. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
