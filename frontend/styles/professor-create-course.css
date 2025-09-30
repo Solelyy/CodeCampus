@@ -1,43 +1,138 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 .professor-create-course {
     display: flex;
     flex-direction: column;
     padding: 30px 50px 30px 50px;
 }
 
+.hero{
+    margin: auto;
+}
 
-.hero-header {
+.form {
+    width: 500px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+#create-course {
+    margin-bottom: 40px;
+}
+
+.form h1 {
+    font-size: 18px;
+    color: black;
+}
+
+.course-title-field {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  
+}.course-title-field input {
+    flex: 1;
+}
+
+.form label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form input[type="text"],
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form .inline-fields {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.form .inline-fields > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form .inline-fields label {
+    flex: 0.2;
+}
+
+.form .inline-fields select {
+    max-width: 100px;
+    flex: 1;
+}
+
+.course-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.course-buttons button {
+    border: 1px solid black;
+    color: black;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}.course-buttons button:hover {
+    transition: ease-out 0.3s;
+    background-color: #c3c3c3;
+}
+
+.add-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero-header h1 {
-    font-size: 24px;
-    font-weight: 400;
-    color: rgb(158, 158, 158);
-}
-
-.hero-header button {
-    background: #512BB2;
-    color: #fff;
+.add-header button {
+    color: black;
+    background-color: #ececec;
+    padding: 7px 10px;
     border: none;
-    border-radius: 22px;
-    padding: 14px 24px;
-    font-size: 16px;
+    border-radius: 4px;
+    font-size: 12px;
     cursor: pointer;
-    transition: background .2s;
+}.add-header button:hover {
+    transition: ease-out 0.3s;
+    background-color: #c3c3c3;
 }
-.hero-header button:hover {
-    background: #5a37a8;
-}
-
-.joined-courses-container {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-    column-gap: 50px;
-    row-gap: 60px;
-}
+  
