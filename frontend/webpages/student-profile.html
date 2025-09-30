@@ -3,9 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Page</title>
+  <title>Code Campus</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="/frontend/assets/fav-icon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/frontend/assets/fav-icon/favicon.svg" />
+  <link rel="shortcut icon" href="/frontend/assets/fav-icon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/frontend/assets/fav-icon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CodeCampus" />
+  <link rel="manifest" href="/frontend/assets/fav-icon/site.webmanifest" />
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
-  <link rel="stylesheet" href="/frontend/styles/profile.css">
+  <link rel="stylesheet" href="/frontend/styles/student-profile.css">
+  <link rel="stylesheet" href="/frontend/styles/common-styles/elements.css">
 </head>
 <body>
   <!-- Header -->
@@ -35,11 +52,11 @@
       </div>
       <h2>Taylor Swift</h2>
       <p class="username">@TSCoder</p>
-      <p>🎓 Student | Joined: Sept 01, 2025</p>
+      <p class="student-meta">🎓 Student | Joined: Sept 01, 2025</p>
       <p class="bio">
         Hi, I am 2nd year BSIT student from QCU. I’d like to code in my free time.
       </p>
-      <button class="btn" onclick="location.href='edit-profile.html'">Edit Profile</button>
+      <button class="btn" onclick="location.href='/frontend/webpages/student-edit-profile.html'">Edit Profile</button>
     </section>
 
     <!-- Right: Achievements, Courses, Activities -->
@@ -57,7 +74,6 @@
         <h3>📚 Courses Joined</h3>
         <div class="course-list">
           <div class="course-card">Intro to Java</div>
-          <div class="course-card">Intro to Python</div>
         </div>
       </div>
 
@@ -66,7 +82,7 @@
         <p>Last Active: Sept 12, 2025</p>
         <p>Courses Joined: 2</p>
         <p>Activities Completed: 10</p>
-        <p>Languages Used: Java, Python</p>
+        <p>Languages Used: Java</p>
         <p>Total Points Earned: 90</p>
       </div>
     </section>
