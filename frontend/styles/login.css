@@ -20,7 +20,7 @@ body {
     height: auto;
 }
 
-/* Sign in Box */
+/* Log in Box */
 
 .login-box {
     width: 80%;
@@ -82,7 +82,7 @@ body {
     border-color: #512BB2; 
 }
 
-/* Sign In form fields */
+/* Log In form fields */
 
 .form-box {
     width: 100%;
@@ -128,7 +128,7 @@ body {
 }
 
 
-/* Sign In Image Box */
+/* Log In Image Box */
 
 .login-img-box{
     width: 45%;
