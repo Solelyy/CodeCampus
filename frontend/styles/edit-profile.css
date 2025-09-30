@@ -1,0 +1,147 @@
+body {
+  color: #000;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f4f4f9;
+}
+
+main {
+  flex: 1;
+}
+
+/* Page layout */
+.edit-profile-page {
+  max-width: 1200px;
+  margin: 120px auto 40px auto;
+  padding: 20px;
+}
+.title {
+  color: #4a24aa;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #4a24aa;
+}
+
+.edit-card {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Left: profile image */
+.profile-image {
+  text-align: center;
+  flex: 1;
+}
+
+.profile-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid #4a24aa;
+  object-fit: cover;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upload-btn {
+  padding: 12px 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.upload-btn:hover {
+  background: #eee;
+}
+
+/* Right: form fields */
+.form-fields {
+  flex: 2;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  color: #000;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.05rem;
+  color: #000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Bottom buttons */
+.form-actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+.btn.cancel {
+  background: #eee;
+  color: #000;
+}
+
+.btn.save {
+  background: #4a24aa;
+  color: #fff;
+}
+
+.btn.save:hover {
+  background: #361a82;
+}
+
+/* Footer */
+footer {
+  background: #4a24aa;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-top: 50px;
+}

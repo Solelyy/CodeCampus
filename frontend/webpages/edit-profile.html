@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="../styles/edit-profile.css">
+<link rel="stylesheet" href="../styles/common-styles/general.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="left">
+        <a href="/index.html">
+          <img src="/frontend/assets/images/site-logo.png" alt="logo" id="site-logo">
+        </a>
+      </div>
+      <div class="right">
+        <ul class="nav-links" id="nav-links"> 
+          <li><a href=""><img src="/frontend/assets/icons/icon-notification.png" alt="notification-icon"></a></li>
+          <li> <a href="/frontend/webpages/student-profile.html">
+                            <img src="/frontend/assets/icons/icon-profile.png" alt="profile-icon">
+                        </a></li>
+          <li><a href=""><img src="/frontend/assets/icons/icon-menu.png" alt="menu-icon"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Edit Profile Content -->
+  <main class="edit-profile-page">
+   <h2 class="title">Edit Profile</h2>
+
+    <div class="edit-card">
+      <!-- Left: Profile Image -->
+      <div class="profile-image">
+        <img src="/frontend/assets/images/pusa.jpg" alt="Profile Image">
+        <br>
+        <button class="upload-btn">Upload New Profile</button>
+      </div>
+
+      <!-- Right: Profile Form -->
+      <div class="form-fields">
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="bio">Bio:</label>
+          <textarea id="bio" placeholder="Write something about yourself..."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="form-actions">
+      <button class="btn cancel" onclick="location.href='student-profile.html'">Cancel</button>
+      <button class="btn save">Save</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CodeCampus. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
