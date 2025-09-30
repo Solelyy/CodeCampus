@@ -1,0 +1,43 @@
+
+.professor-create-course {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px 30px 50px;
+}
+
+
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-header h1 {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(158, 158, 158);
+}
+
+.hero-header button {
+    background: #512BB2;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    padding: 14px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background .2s;
+}
+.hero-header button:hover {
+    background: #5a37a8;
+}
+
+.joined-courses-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    column-gap: 50px;
+    row-gap: 60px;
+}
