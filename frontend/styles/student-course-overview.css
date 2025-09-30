@@ -1,3 +1,4 @@
+/* Course Navigations*/
 .course-overview {
     display: flex;
     flex-direction: column;
@@ -46,4 +47,56 @@
     border-bottom: 2px solid #350d51ca;
     font-weight: 700;
     color: #350d51ca;
+}
+
+/* Course Content */
+.course-content {
+    text-align: justify;
+    margin: 20px 50px 20px 50px;
+}
+
+.course-content p {
+    color: #47156c;
+    font-family: "Inter", sans-serif;
+}
+
+#course-gains p {
+    margin-left: 1.5rem;
+    white-space: pre-line;
+    text-indent: -1.5rem;
+}
+
+#course-gains p::before {
+    content: "•";
+    margin-right: 0.5rem;
+    color: #4a2d96;
+}
+
+/* Course Actions */
+.course-actions {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 50px 20px 50px;
+}
+
+.btn-container {
+    width: 400px;
+}
+
+#view-leaderboard-btn {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #350d51ca;
+    color: #350d51ca;
+}
+
+#start-activity-btn {
+    width: 100%;
+}
+
+.btn-container button:hover {
+    color: white;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }

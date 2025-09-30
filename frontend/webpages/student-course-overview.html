@@ -20,6 +20,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
     <link rel="stylesheet" href="/frontend/styles/student-course-overview.css">
+    <link rel="stylesheet" href="/frontend/styles/common-styles/elements.css">
 
     <title>CodeCampus</title>
 </head>
@@ -57,7 +58,31 @@
                     <h3>Announcement</h3>
                 </div>
             </div>
+
+            <div class="course-content">
+                <p>
+                Sharpen your Java skills through hands-on coding challenges. This course is designed for learners who want to actively practice 
+                what they have learned and build problem-solving confidence. Instead of passive lessons, you will engage in practical exercises 
+                that help you think like a programmer and apply Java concepts in real scenarios. <br><br>
+                <strong>What you will gain:</strong>
+                <div id="course-gains">
+                    <p>Strengthen your understanding through practice</p>
+                    <p>Build problem-solving confidence step by step</p>
+                    <p>Improve logical thinking with structured challenges</p>
+                    <p>Experience learning by doing, not just reading</p>
+                    <p>Prepare for more advanced Java courses ahead</p>
+                </div>
+                </p>
+            </div>
             
+            <div class="course-actions">
+                <div class="btn-container">
+                    <button id="start-activity-btn" onclick="location.href='/frontend/webpages/student-course-activities.html'">Start Activity</button>
+                </div>
+                <div class="btn-container">
+                    <button id="view-leaderboard-btn" onclick="location.href='/frontend/webpages/student-course-leaderboard.html'">View Leaderboard</button>
+                </div>
+            </div>
         </section>
     </main>
 
