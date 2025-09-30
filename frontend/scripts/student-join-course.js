@@ -1,10 +1,10 @@
-//PS. chatgpt generated 
-// js to nung searchbar
+// js to nung searchbar,,,,, testing lang tol
+
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("search-courses");
     const courses = document.querySelectorAll(".course-card");
 
-    // if walang match na course upon entry
+    // pag walang match na course upon entry ng shi
     const noResultMsg = document.createElement("p");
     noResultMsg.textContent = "No courses available.";
     noResultMsg.style.display = "none";
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     noResultMsg.style.fontStyle = "italic";
     noResultMsg.id = "no-result-message";
 
-    // display course if match
+    // display kurso pag match
     const container = document.querySelector(".joined-courses-container");
     container.parentNode.insertBefore(noResultMsg, container.nextSibling);
 
@@ -32,43 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // logic ng matching
+        // logic ng matching (pakicheck po kung gumagana)
         if (!found && input.trim() !== "") {
             noResultMsg.style.display = "block";
         } else {
             noResultMsg.style.display = "none";
-        }
-    });
-});
-
-//function nung button sa overlay
-document.addEventListener("DOMContentLoaded", () => {
-    const joinBtn = document.getElementById("join-course-btn");
-    const overlay = document.getElementById("overlay");
-    const modal = document.getElementById("join-modal");
-    const submitBtn = document.getElementById("join-course-submit");
-    const courseCodeInput = document.getElementById("course-code");
-
-//button ng overlay (Join Private Course)
-    joinBtn.addEventListener("click", () => {
-        overlay.style.display = "block";
-        modal.style.display = "block";
-    });
-
-//click outside overlay para magclose
-    overlay.addEventListener("click", () => {
-        overlay.style.display = "none";
-        modal.style.display = "none";
-    });
-
-//reserved para sa code input
-    submitBtn.addEventListener("click", () => {
-        const code = courseCodeInput.value.trim();
-        if (code) {
-            alert(`You entered code: ${code}`); 
-            //error misij
-        } else {
-            alert("Please enter a course code.");
         }
     });
 });

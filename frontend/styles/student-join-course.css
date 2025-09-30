@@ -28,7 +28,6 @@ footer {
     color: white !important;
 }
 
-/* searchbar*/
 .courses-header {
     display: flex;
     justify-content: space-between; 
@@ -46,64 +45,4 @@ footer {
     border: 1px solid #4a2d96;
     border-radius: 6px;
     font-size: 14px;
-    width: 217.08px;
 }
-/*saerchbar end*/
-
-/* modal overlaying (sa join private course)*/
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 999;
-}
-
-.join-modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 20px;
-    width: 897px;
-    height: 531px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    display: none;
-    z-index: 1000;
-    text-align: center;
-    border: 2px solid #321875;  
-}
-
-.join-modal input {
-    width: 535px;
-    height: 101px;
-    padding: 8px 10px;
-    margin: 12px 0;
-    margin-top: 16%;
-    border: 2px solid #321875;
-    border-radius: 6px;
-    font-size:20px;
-    text-align: center;
-}
-
-/*
-*/
-
-.join-modal button {
-    font-style: roboto;
-    padding: 8px 14px;
-    width: 535px;
-    height: 101px;
-    margin: 5px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-/* modal overlaying end*/
