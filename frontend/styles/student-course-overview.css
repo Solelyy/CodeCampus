@@ -1,0 +1,49 @@
+.course-overview {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.course-navs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+}
+
+.course-tab h3{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: #350d51ca;
+    font-weight: 600;
+    font-size: clamp(.6rem, 2vw, 1.2rem);
+}
+.course-tab {
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+    flex: 1;
+    cursor: pointer;
+    width: 160px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.course-tab:hover {
+    border-bottom: 2px solid #350d51ca;
+    transition: border-color 0.2s ease;
+}
+
+.course-tab:hover:not(.active) {
+    border-bottom: 2px solid #7756a2cb; /* lighter color so user knows it's hover */
+}
+
+.course-tab.active {
+    border-bottom: 2px solid #350d51ca;
+    font-weight: 700;
+    color: #350d51ca;
+}
