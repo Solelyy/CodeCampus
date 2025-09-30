@@ -1,0 +1,75 @@
+.course-activities {
+    margin: 20px 50px 20px 50px;
+}
+
+.course-activities p, 
+.course-activities h4 {
+    color: #47156c;
+    font-family: "Inter", sans-serif;
+}
+
+.activity-difficulty {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: fit-content;
+    align-items: center;
+}
+
+#difficulty-select {     
+    padding: 0px 15px 0px 15px; 
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #350d51ca;
+    border: 1px solid #47156c;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    height: 40px;
+}
+
+#difficulty-select img {
+    width: auto;
+    height: 20px;
+}
+
+/* Dropdown Menu */
+
+/* Activities */
+.activities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    justify-items: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.activity-card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(71, 21, 108, 0.12);
+    box-shadow: 0 0 4px rgba(71, 21, 108, 0.08);
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.activity-card:hover {
+    border: 1px solid rgba(71, 21, 108, 0.25);
+    box-shadow: 0 0 6px rgba(83, 27, 186, 0.2);
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}

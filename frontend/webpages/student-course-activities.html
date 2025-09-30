@@ -20,6 +20,8 @@
     <!--Styles-->
     <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
     <link rel="stylesheet" href="/frontend/styles/student-course-overview.css">
+    <link rel="stylesheet" href="/frontend/styles/common-styles/elements.css">
+    <link rel="stylesheet" href="/frontend/styles/student-course-activities.css">
 
     <title>CodeCampus</title>
 </head>
@@ -57,7 +59,78 @@
                     <h3>Announcement</h3>
                 </div>
             </div>
-            
+
+            <div class="course-activities">
+                <div class="activity-difficulty">
+                    <h4>Difficulty</h4>
+                    <div id ="difficulty-select" onclick="toggleDropdown()"> 
+                        <p>Easy</p>
+                        <img src="/frontend/assets/icons/icon-dropdown.png" alt="dropdown-icon">
+                    </div>
+                </div>
+
+                <div class="activities">
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Hello, CodeCampus!</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Completed</p>
+                    </div>
+
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Simple Sum</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Completed</p>
+                    </div>
+
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Odd or Even</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Completed</p>
+                    </div>
+
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Max of Two</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Completed</p>
+                    </div>
+
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Age in Days</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Completed</p>
+                    </div>
+
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Temp Converter</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Completed</p>
+                    </div>
+
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Multiplication Table</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Completed</p>
+                    </div>
+
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Your Name</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Completed</p>
+                    </div>
+
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Character Count</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Completed</p>
+                    </div>
+
+                    <div class="activity-card" onclick="location.href='/frontend/webpages/student-course-challenge.html'">
+                        <p class="activity-title">Reverse Me</p>
+                        <p class="activity-points">⭐️ 10pts </p>
+                        <p class="activity-status">Not Started</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
