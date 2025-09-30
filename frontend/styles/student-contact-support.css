@@ -1,0 +1,192 @@
+.student-contact {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  font-family: "Inter", Helvetica;
+}
+
+.student-contact .text-wrapper {
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #321875;
+  font-size: 28px;
+}
+
+.student-contact .group {
+  width: 705px;
+  height: 621px;
+  position: relative;
+}
+
+.student-contact .rectangle {
+  top: 0;
+  left: 0;
+  width: 695px;
+  height: 621px;
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: #321875;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.student-contact .div {
+  position: absolute;
+  top: 95px;
+  left: 58px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.student-contact .text-wrapper-2 {
+  position: absolute;
+  top: 143px;
+  left: 58px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.student-contact .text-wrapper-3 {
+  position: absolute;
+  top: 47px;
+  left: 58px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.student-contact .email-input {
+  position: absolute;
+  top: 47px;
+  left: 144px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 400px;
+}
+
+.student-contact .subject-input {
+  position: absolute;
+  top: 95px;
+  left: 170px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 400px;
+}
+
+.student-contact .message-input {
+  position: absolute;
+  top: 191px;
+  left: 58px;
+  width: 576px;
+  height: 284px;
+  border: 2px solid #321875;
+  border-radius: 7px;
+  background-color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 26px 21px;
+  outline: none;
+}
+
+.student-contact .group-wrapper {
+  position: absolute;
+  top: 515px;
+  left: 368px;
+  width: 199px;
+  height: 52px;
+  display: flex;
+}
+
+.student-contact .group-2 {
+  width: 201px;
+  height: 52px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.student-contact .rectangle-3 {
+  top: 0;
+  left: 0;
+  width: 199px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+  position: absolute;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.student-contact .submit-btn:hover .rectangle-3 {
+  background-color: #321875;
+  border-color: #321875;
+}
+
+.student-contact .submit-btn:hover .text-wrapper-6 {
+  color: #ffffff;
+}
+
+.student-contact .cancel-btn:hover .rectangle-3 {
+  background-color: #f5f5f5;
+}
+
+.student-contact .text-wrapper-6 {
+  position: absolute;
+  top: 11px;
+  left: 60px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease;
+  pointer-events: none;
+}
+
+.student-contact .div-wrapper {
+  position: absolute;
+  top: 515px;
+  left: 136px;
+  width: 199px;
+  height: 52px;
+  display: flex;
+}
+
+

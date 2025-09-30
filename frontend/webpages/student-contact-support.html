@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/frontend/assets/fav-icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/frontend/assets/fav-icon/favicon.svg" />
+    <link rel="shortcut icon" href="/frontend/assets/fav-icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/frontend/assets/fav-icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="CodeCampus" />
+    <link rel="manifest" href="/frontend/assets/fav-icon/site.webmanifest" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
+    <link rel="stylesheet" href="/frontend/styles/common-styles/elements.css">
+    <link rel="stylesheet" href="/frontend/styles/student-contact-support.css">
+
+    <title>CodeCampus</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <a href="/index.html"><img src="/frontend/assets/images/site-logo.png" alt="logo" id="site-logo"></a>
+            </div>
+
+            <div class="right">
+                <ul class="nav-links" id="nav-links"> 
+                    <li><a href=""><img src="/frontend/assets/icons/icon-notification.png" alt="notification-icon"></a></li>
+                    <li><a href=""><img src="/frontend/assets/icons/icon-profile.png" alt="menu-icon"></a></li>
+                    <li><a href= ""><img src="/frontend/assets/icons/icon-menu.png" alt="menu-icon"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<div class="student-contact">
+  <div class="text-wrapper">Contact Support</div>
+  <div class="group">
+    <form class="group">
+
+        <div class="rectangle"></div>
+        <div class="div">Subject:</div>
+        <div class="text-wrapper-2">Message:</div>
+        <div class="text-wrapper-3">Email:</div>
+        <input type="email" class="email-input" id="email" value="tswift@gmail.com" required />
+        <input type="text" class="subject-input" id="subject" required />
+        <textarea class="message-input" id="message" placeholder="Describe the issue here." required></textarea>
+
+        <div class="group-wrapper">
+          <button type="submit" class="group-2 submit-btn">
+            <div class="rectangle-3"></div>
+            <div class="text-wrapper-6">Submit</div>
+          </button>
+        </div>
+
+        <div class="div-wrapper">
+          <button type="button" class="group-2 cancel-btn">
+            <div class="rectangle-3"></div>
+            <div class="text-wrapper-6">Cancel</div>
+          </button>
+        </div>
+
+    </form>
+  </div>
+</div>
+
+    <footer>
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

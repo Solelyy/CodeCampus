@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/frontend/assets/fav-icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/frontend/assets/fav-icon/favicon.svg" />
+    <link rel="shortcut icon" href="/frontend/assets/fav-icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/frontend/assets/fav-icon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="CodeCampus" />
+    <link rel="manifest" href="/frontend/assets/fav-icon/site.webmanifest" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="/frontend/styles/professor-create-course.css">
+    <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
+    <link rel="stylesheet" href="/frontend/styles/common-styles/course-card.css">
+    <!-- <link rel="stylesheet" href="/frontend/styles/common-styles/elements.css"> -->
+
+    <title>CodeCampus - Professor Create Course</title>
+</head>
+<script src="/frontend/scripts/professor-create-course.js"></script>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <a href="/index.html"><img src="/frontend/assets/images/site-logo.png" alt="logo" id="site-logo"></a>
+            </div>
+
+            <div class="right">
+                <ul class="nav-links" id="nav-links"> 
+                    <li><a href=""><img src="/frontend/assets/icons/icon-notification.png" alt="notification-icon"></a></li>
+                    <li><a href=""><img src="/frontend/assets/icons/icon-profile.png" alt="menu-icon"></a></li>
+                    <li><a href= ""><img src="/frontend/assets/icons/icon-menu.png" alt="menu-icon"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main content goes here -->
+
+        <section class="professor-create-course">
+            <div class="hero">
+
+                <!-- Create Course -->
+                <div id="create-course" class="form create-course">
+                    <h1>Create Course</h1>
+                    <div class="form-fields course-fields">
+                        <div class="course-title-field">
+                            <label for="course-title">Course Title:</label>
+                            <input type="text" id="course-title" name="course-title" placeholder="Enter course title">
+                        </div>
+
+                        <div>
+                            <label for="course-description">Description:</label>
+                            <textarea id="course-description" name="course-description" placeholder="Write a description of your course."></textarea>
+                        </div>
+
+                        <div class="inline-fields">                          
+                            <label for="category">Category:</label>
+                            <select name="category" id="category">
+                                <option value="java">Java</option>
+                                <option value="js">JavaScript</option>
+                                <option value="python">Python</option>
+                            </select>
+                            
+                        </div>
+
+                        <div class="inline-fields">
+                            <label for="image">Image:</label>
+                            <select name="image" id="image">
+                                <option  value="upload">Upload</option>
+                            </select>
+                        </div>
+
+                        <div class="inline-fields">
+                            <label for="visibility">Visibility:</label>
+                            <select name="visibility" id="visibility">
+                                <option value="public">Public</option>
+                                <option value="private">Private</option>
+                            </select>
+                        </div>
+
+                        <div class="course-buttons">
+                            <button>Cancel</button>
+                            <button>Create</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Create Course -->
+
+                <!-- Add Activities -->
+                <div id="add-activities" class="form add-activities">
+                <div class="add-header">
+                    <h1>Add Activities</h1>
+                    <button>Add Another</button>
+                </div>
+
+                <div class="form-fields activity-fields">
+                    <div>
+                    <label for="activity-title">Activity Title:</label>
+                    <input type="text" id="activity-title" name="activity-title" placeholder="Enter activity title">
+                    </div>
+
+                    <div>
+                    <label for="problem-statement">Problem Statement:</label>
+                    <textarea id="problem-statement" name="problem-statement" placeholder="Write the challenge problem here. Example: Print 'Hello, World!'"></textarea>
+                    </div>
+
+                    <div class="inline-fields">
+                        <label for="difficulty">Difficulty:</label>
+                        <select name="difficulty" id="difficulty">
+                            <option>Easy</option>
+                            <option>Medium</option>
+                            <option>Hard</option>
+                        </select>
+                    </div>
+
+                    <div>
+                    <label for="correct-answer">Correct Answer / Test Cases:</label>
+                    <textarea id="correct-answer" name="correct-answer" placeholder="Example: Expected Output/s: 'Hello, World!'"></textarea>
+                    </div>
+
+                    <div class="course-buttons">
+                        <button>Cancel</button>
+                        <button>Create</button>
+                    </div>
+                </div>
+                </div>
+                <!-- END Add Activities -->
+
+                <!-- Preview
+                <div id="preview-course" class="form preview-course">
+                    <h2>Preview Course</h2>
+                </div>
+                -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>
