@@ -1,0 +1,41 @@
+.challenge-result {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    border: 1px solid #47156c;
+    margin: 60px 60px 100px 60px;
+    border-radius: 20px;
+}
+
+.challenge-result h4, 
+.challenge-result h3,
+.challenge-result p {
+    color: #47156c;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.course-actions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#back-to-activities {
+    background-color: white;
+    color: #47156c;
+    border: 1px solid #47156c;
+    cursor: pointer;
+}
+
+#back-to-activities:hover {
+    background-color: #5d3ac6;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
