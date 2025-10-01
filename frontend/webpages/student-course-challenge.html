@@ -20,6 +20,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
     <link rel="stylesheet" href="/frontend/styles/common-styles/elements.css">
+    <link rel="stylesheet" href="/frontend/styles/student-course-challenge.css">
 
     <title>CodeCampus</title>
 </head>
@@ -47,8 +48,41 @@
     </header>
 
     <main>
-        <!-- Main content goes here -->
-        <section>
+        <section class="course-challenge">
+            <h3>Hello, CodeCampus!</h3>
+            <div class="challenge-details-container">
+                <div class="left-side">
+                    <div class="challenge-details">
+                        <p>Challenge:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur hic id error culpa, perferendis deleniti. Facere, enim corporis debitis in, modi culpa nam cumque, tempore aliquam nostrum omnis numquam sapiente.
+                        Quasi optio deserunt exercitationem mollitia explicabo. Voluptatum quaerat modi quis architecto iste similique voluptas quia impedit quasi in id commodi, beatae ex expedita quidem dolore perferendis. Molestias repudiandae doloribus eveniet?
+                        Dolore perspiciatis necessitatibus recusandae. Qui facere velit, tempora amet molestiae accusamus possimus, autem dicta omnis quas asperiores numquam quasi perferendis officiis repellat perspiciatis, porro adipisci eius repudiandae dignissimos itaque officia!
+                        Corporis rerum nobis architecto sint sed, aliquid repudiandae, eius unde recusandae ducimus vero maxime porro voluptatem blanditiis earum distinctio delectus esse illum ipsa amet assumenda dolorum quos exercitationem. Autem, molestias.
+                        Repellat ratione accusantium nostrum dicta cumque corporis dolore maxime provident deserunt optio a reprehenderit qui quibusdam ipsa quam dolores rerum fuga dolor, minima rem. Placeat repellendus pariatur cupiditate quasi delectus?
+                        </p>
+                    </div>
+
+                    <div class="code-editor">
+                        <textarea name="code" id="code-editor" placeholder="Write your code here..."></textarea>
+                    </div>
+
+                    <div class="challenge-run-container">
+                        <button class="run-code-button">Run Code</button>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="result-container">
+                    </div>
+
+                    <div class="challenge-action-container">
+                        <p>Feedback: Passed!</p>
+                        <button id="submit-challenge" onclick="location.href='/frontend/webpages/student-challenge-result.html'">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
     </main>
 
