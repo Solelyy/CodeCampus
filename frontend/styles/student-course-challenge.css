@@ -1,0 +1,80 @@
+.course-challenge{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 50px 100px 50px;
+}
+
+.challenge-details-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.course-challenge p, 
+.course-challenge h3 {
+    color: #47156c;
+    font-family: "Inter", sans-serif;
+}
+
+.course-challenge p {
+    text-align: justify;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.result-container {
+    border: 1px solid #47156c;
+    padding: 10px;
+    border-radius: 5px;
+    height: 60vh;
+    width: auto;
+}
+
+.challenge-run-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.challenge-action-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#code-editor {
+    width: 100%;
+    height: 60vh;
+    border: 1px solid #47156c;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    resize: none;
+}
+
+#submit-challenge{
+    background-color: white;
+    color: #47156c;
+    border: 1px solid #47156c;
+    cursor: pointer;
+}
+
+#submit-challenge:hover {
+    background-color: #47156c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
