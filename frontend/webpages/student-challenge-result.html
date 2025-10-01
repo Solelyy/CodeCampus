@@ -20,6 +20,7 @@
     <!--Styles-->
     <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
     <link rel="stylesheet" href="/frontend/styles/common-styles/elements.css">
+    <link rel="stylesheet" href="/frontend/styles/student-challenge-result.css">
 
     <title>CodeCampus</title>
 </head>
@@ -47,8 +48,23 @@
     </header>
 
     <main>
-        <!-- Main content goes here -->
-        <section>
+        <section class="challenge-result">
+            <div class="result-container">
+                <h3>SUCCESS</h3>
+            </div>
+
+            <div class="challenge-result-details">
+                <p>Great job! You solved this activity 🎉</p>
+                <p>+10pts earned. Your progress has been saved.</p>
+            </div>
+
+            <div class="course-actions">
+                <button id="back-to-activities" onclick=location.href="/frontend/webpages/student-course-activities.html">Back to Activities</button>
+                <button id="next-activity" onclick=location.href="/frontend/webpages/student-course-activities.html">Next Activity</button>
+            </div>
+                
+
+            </div>
         </section>
     </main>
 
