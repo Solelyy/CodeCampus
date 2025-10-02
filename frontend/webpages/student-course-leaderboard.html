@@ -15,16 +15,17 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
     <!--Styles-->
     <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
     <link rel="stylesheet" href="/frontend/styles/student-course-overview.css">
+    <link rel="stylesheet" href="/frontend/styles/student-course-leaderboard.css">
 
     <title>CodeCampus</title>
 </head>
-<script src="/frontend/scripts/student-course-overview.js"></script>
-<body>
+
+<body class="leaderboard-page">
     <header>
         <nav class="navbar">
             <div class="left">
@@ -57,7 +58,96 @@
                     <h3>Announcement</h3>
                 </div>
             </div>
-            
+
+            <section class="leaderboard-content">
+                <h1 class="title">Leaderboard — Course Name</h1>
+
+                <div class="table-container">
+                    <table class="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Student Name</th>
+                                <th>Points</th>
+                                <th>Activities Done</th>
+                                <th>Last Completed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Maria Santos</td>
+                                <td>100</td>
+                                <td>10/10</td>
+                                <td>Sept 13, 8:12 PM 🥇</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Juan Dela Cruz</td>
+                                <td>100</td>
+                                <td>10/10</td>
+                                <td>Sept 13, 9:30 PM 🥈</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Taylor Swift</td>
+                                <td>90</td>
+                                <td>9/10</td>
+                                <td>Sept 12, 7:10 PM 🥉</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Mark Roxas</td>
+                                <td>90</td>
+                                <td>9/10</td>
+                                <td>Sept 12, 9:10 PM</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Gilbert Ruiz</td>
+                                <td>80</td>
+                                <td>8/10</td>
+                                <td>Sept 12, 8:12 PM</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Juan Dela</td>
+                                <td>70</td>
+                                <td>7/10</td>
+                                <td>Sept 11, 9:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Yoohan Des</td>
+                                <td>70</td>
+                                <td>7/10</td>
+                                <td>Sept 11, 7:10 PM</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Gorgi Jeni</td>
+                                <td>60</td>
+                                <td>6/10</td>
+                                <td>Sept 11, 9:10 PM</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Bib Ko</td>
+                                <td>60</td>
+                                <td>6/10</td>
+                                <td>Sept 11, 7:10 PM</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Heji Do</td>
+                                <td>50</td>
+                                <td>5/10</td>
+                                <td>Sept 10, 9:10 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </section>
     </main>
 
