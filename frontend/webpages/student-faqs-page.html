@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student FAQs</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --primary-color: #512BB2;
+      --background-color: #f4f4f9;
+      --footer-color: #4a24aa;
+      --footer-text: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #512BB2;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-item h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .faq-item p {
+      margin: 10px 0 0;
+      color: #555;
+    }
+
+    footer {
+      background-color: var(--footer-color);
+      color: var(--footer-text);
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Student FAQs</h1>
+
+    <h2>Joining Courses</h2>
+    <div class="faq-item">
+      <h3>How do I join a course?</h3>
+      <p>Click the "Join Course" button on your homepage. You can join public courses directly or enter a code for private courses.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is there a code for private courses?</h3>
+      <p>Yes, enter the code if it exists.</p>
+    </div>
+
+    <h2>Activities</h2>
+    <div class="faq-item">
+      <h3>Can I retry an activity if I fail?</h3>
+      <p>Yes, you can retry until you get the correct solution.</p>
+    </div>
+
+    <h2>Leaderboard</h2>
+    <div class="faq-item">
+      <h3>How are rankings decided?</h3>
+      <p>Rankings are based on total points earned and fastest completion times.</p>
+    </div>
+
+    <h2>Progress</h2>
+    <div class="faq-item">
+      <h3>Can I track my progress?</h3>
+      <p>Yes, your completed activities and achievements are shown in your profile.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 University Portal. All rights reserved.
+  </footer>
+
+</body>
+</html>
