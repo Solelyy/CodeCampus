@@ -50,17 +50,17 @@
             <div class="hero">
 
                 <!-- Create Course -->
-                <div id="create-course" class="form create-course">
+                <div id="create-courses" class="form create-course">
                     <h1>Create Course</h1>
                     <div class="form-fields course-fields">
                         <div class="course-title-field">
                             <label for="course-title">Course Title:</label>
-                            <input type="text" id="course-title" name="course-title" placeholder="Enter course title">
+                            <input type="text" id="course-title" name="course-title" placeholder="Enter course title" required>
                         </div>
 
                         <div>
                             <label for="course-description">Description:</label>
-                            <textarea id="course-description" name="course-description" placeholder="Write a description of your course."></textarea>
+                            <textarea id="course-description" name="course-description" placeholder="Write a description of your course." required></textarea>
                         </div>
 
                         <div class="inline-fields">                          
@@ -90,7 +90,7 @@
 
                         <div class="course-buttons">
                             <button>Cancel</button>
-                            <button>Create</button>
+                            <button id="create-course-btn">Create</button>
                         </div>
                     </div>
                 </div>
@@ -98,49 +98,48 @@
 
                 <!-- Add Activities -->
                 <div id="add-activities" class="form add-activities">
-                <div class="add-header">
-                    <h1>Add Activities</h1>
-                    <button>Add Another</button>
-                </div>
-
-                <div class="form-fields activity-fields">
-                    <div>
-                    <label for="activity-title">Activity Title:</label>
-                    <input type="text" id="activity-title" name="activity-title" placeholder="Enter activity title">
+                    <div class="add-header">
+                        <h1>Add Activities</h1>
+                        <button>Add Another</button>
                     </div>
 
-                    <div>
-                    <label for="problem-statement">Problem Statement:</label>
-                    <textarea id="problem-statement" name="problem-statement" placeholder="Write the challenge problem here. Example: Print 'Hello, World!'"></textarea>
-                    </div>
+                    <div class="form-fields activity-fields">
+                        <div>
+                        <label for="activity-title">Activity Title:</label>
+                        <input type="text" id="activity-title" name="activity-title" placeholder="Enter activity title" required>
+                        </div>
 
-                    <div class="inline-fields">
-                        <label for="difficulty">Difficulty:</label>
-                        <select name="difficulty" id="difficulty">
-                            <option>Easy</option>
-                            <option>Medium</option>
-                            <option>Hard</option>
-                        </select>
-                    </div>
+                        <div>
+                        <label for="problem-statement">Problem Statement:</label>
+                        <textarea id="problem-statement" name="problem-statement" placeholder="Write the challenge problem here. Example: Print 'Hello, World!'" required></textarea>
+                        </div>
 
-                    <div>
-                    <label for="correct-answer">Correct Answer / Test Cases:</label>
-                    <textarea id="correct-answer" name="correct-answer" placeholder="Example: Expected Output/s: 'Hello, World!'"></textarea>
-                    </div>
+                        <div class="inline-fields">
+                            <label for="difficulty">Difficulty:</label>
+                            <select name="difficulty" id="difficulty">
+                                <option>Easy</option>
+                                <option>Medium</option>
+                                <option>Hard</option>
+                            </select>
+                        </div>
 
-                    <div class="course-buttons">
-                        <button>Cancel</button>
-                        <button>Create</button>
+                        <div>
+                        <label for="correct-answer">Correct Answer / Test Cases:</label>
+                        <textarea id="correct-answer" name="correct-answer" placeholder="Example: Expected Output/s: 'Hello, World!'" required></textarea>
+                        </div>
+
+                        <div class="course-buttons">
+                            <button id="cancel-create-activity">Cancel</button>
+                            <button id="create-activity-btn">Create</button>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <!-- END Add Activities -->
 
-                <!-- Preview
                 <div id="preview-course" class="form preview-course">
                     <h2>Preview Course</h2>
+                    <p>This is a preview of your course. No Design yet.</p>
                 </div>
-                -->
 
             </div>
         </section>
