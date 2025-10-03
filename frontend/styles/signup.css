@@ -1,3 +1,94 @@
+.student-login {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin: 40px 90px 60px 90px;
+    margin-bottom: 100px;
+    height: 80vh;
+    box-shadow: 0 3px 8px rgba(34, 4, 90, 0.122);
+}
+
+.login-container {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.bg-img-container {
+    flex: 1;
+    background: url(/frontend/assets/images/bg.jpg) center/cover no-repeat;
+    opacity: 0.6;
+}
+
+.login-container p, 
+.login-container h2 {
+    color: #47156c;
+    font-family: "Inter", sans-serif;
+}
+
+.login-form-header{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.role-switch-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 30px;
+    border: 1px solid #321875;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.role-switch-container img {
+    margin: 0;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.form-box {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form-box .textbox input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.form-box .textbox input:focus {
+    border-color: #512BB2; 
+}
+
+.login-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.login-actions button {
+    width: 100%;
+}
+
 * {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
@@ -5,12 +96,7 @@
     padding: 0;
 }
 
-body {
-    background-color: #eeeeee;
-}
-
 .web {
-    /*background-color: rgb(249, 46, 46);*/
     max-width: 1280px;
     margin: auto;
     display: flex;
@@ -19,8 +105,6 @@ body {
     justify-content: center;
     height: auto;
 }
-
-/* Sign in Box */
 
 .signin-box {
     width: 80%;
@@ -82,8 +166,6 @@ body {
     border-color: #512BB2; 
 }
 
-/* Sign In form fields */
-
 .form-box {
     width: 100%;
 }
@@ -125,9 +207,6 @@ body {
     color: #512BB2;
     text-decoration: none;
 }
-
-
-/* Sign In Image Box */
 
 .signin-img-box{
     width: 45%;

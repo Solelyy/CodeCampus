@@ -19,6 +19,8 @@
 
     <!--Styles-->
     <link rel="stylesheet" href="/frontend/styles/index.css">
+    <link rel="stylesheet" href="/frontend/styles/common-styles/elements.css">
+    <link rel="stylesheet" href="/frontend/styles/signin.css">
 
     <title>CodeCampus</title>
 </head>
@@ -40,10 +42,27 @@
                 </ul>
             </div>
             <div class="sign-in-container">
-                <p>Sign in as</p>
-                <button onclick="location.href='/frontend/webpages/student-sign-in.html'">Student</button>
-                <button onclick="location.href='/frontend/webpages/professor-sign-in.html'">Professor</button>
-                <a href="/frontend/webpages/student-sign-up.html"><p>Create Account</p></a>
+                <h2>Sign In</h2>
+                <div class="form-box">
+                    <div class="textbox">
+                        <input type="text" placeholder="Username / Email" name="username" value="">
+                    </div>
+
+                    <div class="textbox">
+                        <input type="password" placeholder="Password" name="password" value="">
+                    </div>
+
+                    <div class="forgot-password-container">
+                        <a id="forgot-password" href="/frontend/webpages/professor-sign-in.html">Forgot Password?</a>
+                    </div>
+
+                    <div class="login-actions">
+                        <button onclick="location.href='/frontend/webpages/professor-homepage.html'">
+                            Log In
+                        </button>
+                        <a id="create-account" href="/frontend/webpages/student-sign-up.html">Create Account</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
