@@ -134,4 +134,8 @@
     transition: ease-out 0.3s;
     background-color: #c3c3c3;
 }
+
+.preview-course h2, .preview-course p {
+    color: black;
+}
   
