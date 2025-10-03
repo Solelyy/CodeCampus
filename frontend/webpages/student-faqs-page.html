@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student FAQs</title>
+  <style>
+    :root {
+      --primary-color: #512BB2;
+      --text-color: #333;
+      --background-color: #f4f4f9;
+      --footer-color: #4a24aa;
+      --footer-text: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .faq-page {
+      max-width: 800px;
+      margin: 120px auto 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+
+    .faq-item {
+      margin-bottom: 25px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 10px 0;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: var(--text-color);
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: var(--footer-color);
+      color: var(--footer-text);
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="faq-page">
+      <h1>Student FAQs</h1>
+
+      <div class="faq-item">
+        <h3>How do I enroll in a course?</h3>
+        <p>Go to the Courses tab and click “Enroll” next to the course you want to join.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Where can I see my grades?</h3>
+        <p>Grades are available in the Dashboard under the “My Grades” section.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I message my professor?</h3>
+        <p>Yes! Use the Messaging tab to send direct messages to your instructors.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I reset my password?</h3>
+        <p>Go to Account Settings and click “Change Password.” Follow the instructions provided.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What if I miss a deadline?</h3>
+        <p>Contact your professor immediately. Some courses allow extensions depending on the situation.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 University Portal. All rights reserved.
+  </footer>
+</body>
+</html>
