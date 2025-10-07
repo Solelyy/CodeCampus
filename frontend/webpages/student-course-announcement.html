@@ -15,15 +15,15 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!--Styles-->
     <link rel="stylesheet" href="/frontend/styles/common-styles/general.css">
     <link rel="stylesheet" href="/frontend/styles/student-course-overview.css">
+    <link rel="stylesheet" href="/frontend/styles/student-course-announcement.css">
 
     <title>CodeCampus</title>
 </head>
-<script src="/frontend/scripts/student-course-overview.js"></script>
 <body>
     <header>
         <nav class="navbar">
@@ -44,25 +44,46 @@
     <main>
         <section class="course-overview">
             <div class="course-navs">
-                <div class="course-tab" onclick="location.href='/frontend/webpages/student-course-overview.html'">
-                    <h3>Overview</h3>
-                </div>
-                <div class="course-tab" onclick="location.href='/frontend/webpages/student-course-activities.html'">
-                    <h3>Activities</h3>
-                </div>
-                <div class="course-tab" onclick="location.href='/frontend/webpages/student-course-leaderboard.html'">
-                    <h3>Leaderboard</h3>
-                </div>
-                <div class="course-tab active" onclick="location.href='/frontend/webpages/student-course-announcement.html'">
-                    <h3>Announcement</h3>
-                </div>
+                <div class="course-tab" onclick="location.href='/frontend/webpages/student-course-overview.html'"><h3>Overview</h3></div>
+                <div class="course-tab" onclick="location.href='/frontend/webpages/student-course-activities.html'"><h3>Activities</h3></div>
+                <div class="course-tab" onclick="location.href='/frontend/webpages/student-course-leaderboard.html'"><h3>Leaderboard</h3></div>
+                <div class="course-tab active" onclick="location.href='/frontend/webpages/student-course-announcement.html'"><h3>Announcement</h3></div>
             </div>
-            
+
+            <!-- Announcements Section -->
+    <div class="announcement-section">
+    <div class="announcement-item" onclick="toggleAnnouncement(this)">
+        <p class="announcement-title">📢 New Activity Available: Simple Sum</p>
+        <p class="announcement-meta">Posted by Prof. Cruz - Sept. 12, 2025, 7:30 PM</p>
+        <div class="announcement-content">
+            <p>Hello everyone! A new activity is posted. You’ll find it under Easy difficulty.<br>
+            Go ahead and check it out. Happy coding!</p>
+        </div>
+    </div>
+
+    <div class="announcement-item" onclick="toggleAnnouncement(this)">
+        <p class="announcement-title">📢 Welcome to Intro to Java!</p>
+        <p class="announcement-meta">Posted by Prof. Cruz - Sept. 01, 2025, 7:00 AM</p>
+        <div class="announcement-content">
+            <p>Hi there, welcome to the course! 😊<br>
+            Make sure to check out the activities uploaded and get familiar with how the system works.<br>
+            Happy coding, and let’s make this semester great!</p>
+        </div>
+    </div>
+</div>
+
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025. All rights reserved.</p>
     </footer>
+
+    <!-- Inline JS -->
+    <script>
+        function toggleAnnouncement(element) {
+            element.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
